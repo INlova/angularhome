@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>AngularJS</title>
+	<link data-require="bootstrap-css" data-semver="3.1.1" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+	<link data-require="semantic-ui@*" data-semver="0.9.6" href="https://raw.github.com/Semantic-Org/Semantic-UI/0.9.6/build/packaged/css/semantic.min.css" rel="stylesheet">
+	<script data-require="semantic-ui@*" data-semver="0.9.6" src="https://raw.github.com/Semantic-Org/Semantic-UI/0.9.6/build/packaged/javascript/semantic.min.js">
+	</script>
+	<link href="style.css" rel="stylesheet">
+	<script data-require="angular.js@1.2.x" data-semver="1.2.15" src="http://code.angularjs.org/1.2.15/angular.js">
+	</script>
+	<script data-require="jquery@*" data-semver="2.0.3" src="http://code.jquery.com/jquery-2.0.3.min.js">
+	</script>
+	<script src="app.js">
+	</script>
+	<script src="products.js">
+	</script>
+</head>
+<body>
+	<!--  Store Header  -->
+	<header>
+		<h1 class="text-center">Sure Beats Walking Rentals</h1>
+		<h2 class="text-center">– From Point A to B –</h2>
+	</header><!--  Products Container  -->
+	<div class="list-group">
+		<!--  Product Container  -->
+		<div class="list-group-item">
+			<!-- $index Practice:  -->
+			<h3>Car #{{$index + 1}}: {{product.name | uppercase}}<em class="pull-right">{{product.price | currency}}</em></h3><!-- Image Gallery  -->
+			<div>
+				<div class="img-wrap"><img class="img-thumbnail center-block"></div>
+				<ul class="img-thumbnails clearfix">
+					<li class="small-image pull-left thumbnail"><img></li>
+				</ul>
+			</div><!-- Product Tabs  -->
+		</div>
+	</div>
+</body>
+</html>
